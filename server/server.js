@@ -19,7 +19,7 @@ dotenv. config();
 
 connectDb();
 const app=express();
-const port =process.env.PORT || 5000; 
+const port =process.env.PORT || 3001; 
 
 app.set('view engine','hbs');
 
@@ -59,7 +59,7 @@ app.get("/allusers", (req, res) => {
 
 //user registeration 
 app.use("/api/register", require("./routes/userRoutes"));
-
+app.use("/api/details",require("./routes/doctorsDetails"));
 
 //error handling middleware 
 app.use(errorHandler)

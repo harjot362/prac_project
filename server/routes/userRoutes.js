@@ -9,6 +9,7 @@ const{
 
 //route for user registeration 
 router.post("/register",registerUser);
+router.post("/login", loginUser);
 
 //route for user login 
 // router.post("/login",loginUser);
