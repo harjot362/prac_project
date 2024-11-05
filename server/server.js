@@ -134,7 +134,7 @@ app.get("/home", async (req, res) => {
     // Fetch all uploaded files from MongoDB
     const files = await File.find();
     res.render("home", {
-        username: "Harjot",
+        username: "Harjo",
         users: [{ name: "John Doe", age: 30 }, { name: "Jane Smith", age: 25 }],
         files: files // Pass files to the template
     });
